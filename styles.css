@@ -75,8 +75,9 @@ header {
 }
 
 .second-section a {
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
@@ -229,8 +230,26 @@ header h2 {
   width: 57px;
 }
 
+.second-section a {
+  position: relative;
+  text-transform: uppercase;
+  z-index: 200;
+}
+
 .second-section a::after {
-  content: " \2015";
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 115%;
+  bottom: 0;
+  width: 20px;
+  background-color: var(--purple);
+  transition: transform 250ms ease-out;
+}
+
+.second-section a:hover {
+  color: black;
 }
 
 .image-second-section {
